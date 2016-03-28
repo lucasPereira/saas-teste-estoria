@@ -1,13 +1,14 @@
 package test.br.ufsc.etec.saas.estoria.reescritos;
 
-import static org.junit.Assert.*;
-
 import java.util.List;
 
 import org.junit.After;
+import static org.junit.Assert.*;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+import test.br.ufsc.etec.saas.tela.EmTestePagina;
+import test.br.ufsc.etec.saas.tela.selenium.SeleniumSaas;
 import br.ufsc.etec.saas.auxiliar.Calendario;
 import br.ufsc.etec.saas.entidades.Instancia;
 import br.ufsc.etec.saas.entidades.instituicao.AlunoPolo;
@@ -23,8 +24,6 @@ import br.ufsc.etec.saas.entidades.saas.Usuario;
 import br.ufsc.etec.saas.fachadas.EmBanco;
 import br.ufsc.etec.saas.fachadas.EmInstituicao;
 import br.ufsc.etec.saas.fachadas.EmSaas;
-import test.br.ufsc.etec.saas.tela.EmTestePagina;
-import test.br.ufsc.etec.saas.tela.selenium.SeleniumSaas;
 
 public class TesteTelaIntegracaoQuestionarioColetaRespostaResultadoRemoverQuestoes {
 

@@ -8,15 +8,15 @@ import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+import test.br.ufsc.etec.saas.estoria.ConsultorListarConvitesNaoRespondidosDeColetasAbertas;
+import test.br.ufsc.etec.saas.tela.EmTestePagina;
+import test.br.ufsc.etec.saas.tela.selenium.SeleniumSaas;
 import br.ufsc.etec.saas.auxiliar.Calendario;
-import br.ufsc.etec.saas.banco.de.dados.consultores.listar.ConsultorListarConvitesNaoRespondidosDeColetasAbertas;
 import br.ufsc.etec.saas.entidades.Instancia;
 import br.ufsc.etec.saas.entidades.enumerados.Usuarios;
 import br.ufsc.etec.saas.entidades.saas.Convite;
 import br.ufsc.etec.saas.entidades.saas.Usuario;
 import br.ufsc.etec.saas.fachadas.EmBanco;
-import test.br.ufsc.etec.saas.tela.EmTestePagina;
-import test.br.ufsc.etec.saas.tela.selenium.SeleniumSaas;
 
 public class TesteTelaIntegracaoQuestionarioColetaRespostaResultadoOrdemDasQuestoes {
 
