@@ -53,9 +53,9 @@
 	<classpathentry kind="lib" path="/saas/WebContent/WEB-INF/lib/smtp.jar"/>
 	<classpathentry kind="lib" path="/saas/WebContent/WEB-INF/lib/xml-apis-xerces-2.9.1.jar"/>
 	<classpathentry kind="lib" path="/saas/WebContent/WEB-INF/lib/xmlworker-5.4.1.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/saas+teste+web+fatorados/lib/selenium-server-standalone-2.48.2.jar"/>
 	<classpathentry kind="lib" path="/saas+teste/lib/commons-email-1.3.2.jar"/>
 	<classpathentry kind="lib" path="/saas+teste/lib/mail.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

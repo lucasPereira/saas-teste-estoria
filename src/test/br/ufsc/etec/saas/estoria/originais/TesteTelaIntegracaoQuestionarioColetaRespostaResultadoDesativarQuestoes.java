@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
-import org.junit.After;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 
 import test.br.ufsc.etec.saas.estoria.ConsultorListarConvitesNaoRespondidosDeColetasAbertas;
@@ -17,7 +17,9 @@ import br.ufsc.etec.saas.entidades.enumerados.Usuarios;
 import br.ufsc.etec.saas.entidades.saas.Convite;
 import br.ufsc.etec.saas.entidades.saas.Usuario;
 import br.ufsc.etec.saas.fachadas.EmBanco;
+import br.ufsc.ine.leb.projetos.estoria.Estoria;
 
+@RunWith(Estoria.class)
 public class TesteTelaIntegracaoQuestionarioColetaRespostaResultadoDesativarQuestoes {
 
 	private Instancia teste;
@@ -135,6 +137,8 @@ public class TesteTelaIntegracaoQuestionarioColetaRespostaResultadoDesativarQues
 		segundaColetaResultadosVerificarExtratificada();
 		coletaResultadosVisualizarComPeriodoAnteriorEExtratificada();
 		primeiraColetaResultadosVerificarExtratificada();
+
+		desautenticar();
 	}
 
 	private void criarInstanciaComAdministradoraBeatriz() throws Exception {
@@ -1100,11 +1104,6 @@ public class TesteTelaIntegracaoQuestionarioColetaRespostaResultadoDesativarQues
 
 	private List<Convite> obterConvites() throws Exception {
 		return new ConsultorListarConvitesNaoRespondidosDeColetasAbertas(teste).executar();
-	}
-
-	@After
-	public void tearDown() throws Exception {
-		selenium.acessar("/saas/logout");
 	}
 
 }
