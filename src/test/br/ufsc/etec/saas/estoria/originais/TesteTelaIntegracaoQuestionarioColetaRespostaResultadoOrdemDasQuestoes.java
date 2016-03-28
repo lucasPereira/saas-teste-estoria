@@ -82,15 +82,20 @@ public class TesteTelaIntegracaoQuestionarioColetaRespostaResultadoOrdemDasQuest
 
 	private void criarInstanciaComAdministradoraBeatriz() throws Exception {
 		teste = EmBanco.novaInstancia();
+		assertNotEquals(0, teste.getId().intValue());
+
+		selenium = EmTestePagina.selenium();
+		EmTestePagina.get(selenium).trocarInstancia(teste);
+		assertNotNull(selenium);
+
 		beatriz = new Usuario();
 		beatriz.setNome("Beatriz");
 		beatriz.setLogin("admin");
 		beatriz.setSenha("senha");
 		beatriz.setPapel(Usuarios.ADMIN);
 		beatriz.setEmail("beatriz@gmail.com");
-		selenium = EmTestePagina.selenium();
 		EmBanco.get(teste).cadastrarAdmin(beatriz);
-		EmTestePagina.get(selenium).trocarInstancia(teste);
+		assertNotNull(beatriz.getId());
 	}
 
 	private void logarComAdministradoraBeatriz() {
