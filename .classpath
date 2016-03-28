@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/saas"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/saas+teste+web+fatorados"/>
+	<classpathentry kind="lib" path="/saas+teste+web+fatorados/lib/selenium-server-standalone-2.48.2.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/saas+teste"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
