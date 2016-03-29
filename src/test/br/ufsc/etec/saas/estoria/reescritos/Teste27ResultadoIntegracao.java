@@ -51,7 +51,6 @@ public class Teste27ResultadoIntegracao {
 
 	@Test
 	public void testar3() throws Exception {
-
 		selenium.assertTextEquals("enunciado multipla coleta 1 versão 1", "avaliacao:dimensao:0:resultados:1:enunciadoMultipla");
 		selenium.assertTextEquals("100,0%", "avaliacao:dimensao:0:resultados:1:alternativasMultipla:0:percentual");
 		selenium.assertTextEquals("0,0%", "avaliacao:dimensao:0:resultados:1:alternativasMultipla:1:percentual");

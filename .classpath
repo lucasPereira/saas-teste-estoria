@@ -6,7 +6,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/saas+teste"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/saas+teste+web+fatorados"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/estoria"/>
-	<classpathentry kind="lib" path="/estoria/jar/estoria.jar"/>
 	<classpathentry kind="lib" path="/saas/WebContent/WEB-INF/lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="/saas/WebContent/WEB-INF/lib/bootstrap-1.0.10.jar"/>
 	<classpathentry kind="lib" path="/saas/WebContent/WEB-INF/lib/commons-fileupload-1.3.1.jar"/>

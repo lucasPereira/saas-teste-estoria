@@ -124,33 +124,32 @@ public class Teste22QuestionarioIntegracao {
 
 	@Test
 	public void testar3() throws Exception {
-		selenium.assertTextEquals("Desativada", "form:topicos:0:questoes:0:desativada");
-		selenium.assertTextEquals("enunciado objetiva coleta 1 versão 2", "form:topicos:0:questoes:0:enunciadoDaQuestao");
-		selenium.assertTextEqualsForLabel("alternativa 1 objetiva coleta 1 versão 2", "form:topicos:0:questoes:0:radio:0");
-		selenium.assertTextEqualsForLabel("alternativa 2 objetiva coleta 1 versão 2", "form:topicos:0:questoes:0:radio:1");
-	}
-
-	@Test
-	public void testar4() throws Exception {
-		selenium.assertElementNotExists("form:topicos:0:questoes:5:desativada");
-		selenium.assertTextEquals("enunciado objetiva coleta 2 versão 1", "form:topicos:0:questoes:5:enunciadoDaQuestao");
-		selenium.assertTextEqualsForLabel("alternativa 1 objetiva coleta 2 versão 1", "form:topicos:0:questoes:5:radio:0");
-		selenium.assertTextEqualsForLabel("alternativa 2 objetiva coleta 2 versão 1", "form:topicos:0:questoes:5:radio:1");
-	}
-
-	@Test
-	public void testar5() throws Exception {
 		selenium.assertTextEquals("enunciado multipla coleta 1 versão 1", "form:topicos:0:questoes:1:enunciadoDaQuestao");
 		selenium.assertTextEquals("alternativa 1 multipla coleta 1 versão 1", "form:topicos:0:questoes:1:multiplaAlternativas:0:multiplaAlternativaLabel");
 		selenium.assertTextEquals("alternativa 2 multipla coleta 1 versão 1", "form:topicos:0:questoes:1:multiplaAlternativas:1:multiplaAlternativaLabel");
 	}
 
 	@Test
+	public void testar4() throws Exception {
+		selenium.assertTextEquals("enunciado discursiva coleta 1 versão 1", "form:topicos:0:questoes:2:enunciadoDaQuestao");
+	}
+
+	@Test
+	public void testar5() throws Exception {
+		selenium.assertTextEquals("enunciado quadro multipla coleta 1 versão 1", "form:topicos:0:questoes:3:enunciadoDaQuestao");
+		selenium.assertTextEquals("alternativa 1 quadro multipla coleta 1 versão 1", "form:topicos:0:questoes:3:alternativasQuadroMultipla:0:alternativaQuadroMultipla");
+		selenium.assertTextEquals("alternativa 2 quadro multipla coleta 1 versão 1", "form:topicos:0:questoes:3:alternativasQuadroMultipla:1:alternativaQuadroMultipla");
+		selenium.assertTextEquals("enunciado 1 quadro multipla coleta 1 versão 1", "form:topicos:0:questoes:3:enunciadosQuadroMultipla:0:enunciado");
+		selenium.assertTextEquals("enunciado 2 quadro multipla coleta 1 versão 1", "form:topicos:0:questoes:3:enunciadosQuadroMultipla:1:enunciado");
+	}
+
+	@Test
 	public void testar6() throws Exception {
-		selenium.assertTextEquals("Desativada", "form:topicos:0:questoes:1:desativada");
-		selenium.assertTextEquals("enunciado multipla coleta 1 versão 2", "form:topicos:0:questoes:1:enunciadoDaQuestao");
-		selenium.assertTextEquals("alternativa 1 multipla coleta 1 versão 2", "form:topicos:0:questoes:1:multiplaAlternativas:0:multiplaAlternativaLabel");
-		selenium.assertTextEquals("alternativa 2 multipla coleta 1 versão 2", "form:topicos:0:questoes:1:multiplaAlternativas:1:multiplaAlternativaLabel");
+		selenium.assertTextEquals("enunciado quadro objetiva coleta 1 versão 1", "form:topicos:0:questoes:4:enunciadoDaQuestao");
+		selenium.assertTextEquals("alternativa 1 quadro objetiva coleta 1 versão 1", "form:topicos:0:questoes:4:alternativasQuadroObjetiva:0:alternativaQuadroObjetiva");
+		selenium.assertTextEquals("alternativa 2 quadro objetiva coleta 1 versão 1", "form:topicos:0:questoes:4:alternativasQuadroObjetiva:1:alternativaQuadroObjetiva");
+		selenium.assertTextEquals("enunciado 1 quadro objetiva coleta 1 versão 1", "form:topicos:0:questoes:4:enunciadosQuadroObjetiva:0:enunciado");
+		selenium.assertTextEquals("enunciado 2 quadro objetiva coleta 1 versão 1", "form:topicos:0:questoes:4:enunciadosQuadroObjetiva:1:enunciado");
 	}
 
 }

@@ -3,7 +3,7 @@ package test.br.ufsc.etec.saas.estoria.reescritos;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite.SuiteClasses;
 
-import br.ufsc.ine.leb.projetos.estoria.Estoria;
+import br.ufsc.ine.leb.projetos.estoria.EstoriaReaproveitador;
 
 @SuiteClasses({
 		Teste11InstanciaTeste.class,
@@ -24,7 +24,7 @@ import br.ufsc.ine.leb.projetos.estoria.Estoria;
 		Teste26ColetaIntegracaoFechada.class,
 		Teste27ResultadoIntegracao.class
 })
-@RunWith(Estoria.class)
-public class Suite {
+@RunWith(EstoriaReaproveitador.class)
+public class SuiteReaproveitador {
 
 }
